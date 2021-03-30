@@ -1,0 +1,53 @@
+
+<html>
+  <head>
+    <title>DOM MANIPULATION</title>
+  </head>
+  <!-- your html file: -->
+<body>
+  <h1>
+    samp
+  </h1>
+  <div id="container"></div>
+</body>
+  <script>
+  const container = document.querySelector('#container');
+
+  const content = document.createElement('div');
+  content.classList.add('content');
+  content.textContent = 'samp text';
+
+  container.appendChild(content);
+
+  const newP = document.createElement('p');
+  newP.classList.add('newP');
+  newP.textContent = "Hey I'm red!";
+  newP.style['color'] = 'red';
+  container.appendChild(newP);
+
+  const h2Tag = document.createElement('h3');
+  h2Tag.classList.add('h2Tag');
+  h2Tag.textContent = "I'm a blue h3!";
+  h2Tag.style['color'] = 'blue';
+  container.appendChild(h2Tag);
+
+  const body = document.querySelector('body');
+
+  const div = document.createElement('div');
+  div.classList.toggle('div');
+  div.style['background-color'] = 'pink';
+  div.style['border-color'] = 'black';
+  body.appendChild(div);
+
+  const h1 = document.createElement('h1');
+  h1.classList.toggle('h1');
+  h1.textContent = "I'm in a div";
+  div.appendChild(h1);
+
+  const p = document.createElement('p');
+  p.classList.add('p');
+  p.textContent = "ME TOO!";
+  div.appendChild(p);
+  container.appendChild(div);
+  </script>
+  </html>
