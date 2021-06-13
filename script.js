@@ -2,13 +2,16 @@ const body = document.querySelector('body');
 const container = document.querySelector('.container');
 const resetButton = document.createElement('button');
 
-body.style['background-color'] = 'rgb(84, 84, 84)';
+body.style['background-color'] = 'rgb(219, 219, 219)';
 container.setAttribute('style', `display: grid;
                                  position: relative;
                                  top: 5%;
                                  left: 29%;
                                  background-color: rgb(235,235,235);
                                  padding: 1px;
+                                 border: 1px solid;
+                                 border-radius: 5px;
+                                 box-shadow: rgba(0,0,0,2) 0px 3px 8px;
                                  min-width:90vh;
                                  max-width: 90vh;
                                  min-height: 80vh;
